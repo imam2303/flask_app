@@ -1,0 +1,487 @@
+nama,alamat,jenis_pmks,hubungan_dlm_keluarga,jml_tanggungan_kepala_keluarga,pendapatan_keluarga,status_rumah,pekerjaan,layak_tidak
+Qinthara Maharani A,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K2,Baik,Milik Sendiri,Pelajar,Tidak
+Ricko Putra Pratama,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K2,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Muhammad Abel,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K1,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Haliza Nur Azizah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K3,Baik,Milik Sendiri,Pelajar,Tidak
+Radtya Fajar,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K2,Cukup,Kontrakan,Pelajar,Layak
+Sulastri Dwi Wulandari,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K2,Baik,Milik Sendiri,Tidak bekerja,Tidak
+Bunga Lestari,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K4,Baik,Kontrakan,Pelajar,Layak
+Syam  Nur Alam,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K4,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Pebryan Dwi Putra,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K3,Cukup,Milik Sendiri,Tidak bekerja,Layak
+Romi Aditiya,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Anak Dalam Kedistabilitasan,Anak,K3,Baik,Milik Sendiri,Pelajar,Layak
+Wiryono,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Lansia Terlantar,Kepala Keluarga,K0,Baik,Milik Sendiri,Pensiunan,Tidak
+Aah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Milik Sendiri,IRT,Layak
+Diah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Milik Sendiri,IRT,Layak
+Odah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Milik Sendiri,IRT,Layak
+Ade Wahyu,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Lansia Terlantar,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Nana Suryana,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K1,Cukup,Kontrakan,Wiraswasta,Layak
+Irfan Al Haq,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K2,Baik,Milik Sendiri,Pelajar,Tidak
+Heiru Novita Safitri,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Kepala Keluarga,K1,Cukup,Kontrakan,IRT,Layak
+Gerald Yoga Pratama,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K2,Cukup,Milik Sendiri,Pelajar,Layak
+Aziz Ghafara,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Kepala Keluarga,K3,Cukup,Milik Sendiri,Wiraswasta,Layak
+Dewi Kartika,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Ibu,K3,Baik,Kontrakan,IRT,Layak
+Nining,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Ibu,K5,Cukup,Kontrakan,IRT,Layak
+Binar Bestari,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K3,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Wajah Komara Dewi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K2,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Jurnalelah Yati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Kepala Keluarga,K1,Kurang,Milik Sendiri,IRT,Layak
+Aini Nur Khisty,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K4,Baik,Kontrakan,Pelajar,Layak
+Didi Ahmadi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Kepala Keluarga,K1,Baik,Kontrakan,Karyawan Swasta,Layak
+Erdila Sherli,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K4,Kurang,Kontrakan,Pelajar,Layak
+Anti,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K2,Kurang,Kontrakan,Pelajar,Layak
+Moch. Abi W,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K1,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Dio Pria Nugraha,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K2,Sangat Baik,Milik Sendiri,Tidak bekerja,Tidak
+Febrioso P Jumantoro,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K1,Baik,Milik Sendiri,Tidak bekerja,Tidak
+Fahmi Wahyudi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K1,Sangat Baik,Kontrakan,Tidak bekerja,Tidak
+Aznita Gustini,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K1,Baik,Milik Sendiri,Pelajar,Tidak
+Dewi Julianthy,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K3,Baik,Kontrakan,Tidak bekerja,Layak
+Yanti Somantri,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K5,Sangat Baik,Kontrakan,Pelajar,Layak
+Lina Marlina,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Ibu,K0,Baik,Milik Sendiri,IRT,Layak
+Saepudiri Nawawi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Kepala Keluarga,K4,Baik,Kontrakan,Wiraswasta,Layak
+Siti Aminah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K1,Sangat Baik,Kontrakan,IRT,Tidak
+Cucu Ramdani,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K3,Baik,Kontrakan,Buruh,Layak
+Nurhayati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K5,Baik,Kontrakan,Tidak bekerja,Layak
+Ujang Karimi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Kepala Keluarga,K0,Sangat Baik,Milik Sendiri,Tidak bekerja,Tidak
+Nina,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K2,Sangat Baik,Milik Sendiri,Tidak bekerja,Tidak
+Deka Repliko,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K5,Sangat Baik,Milik Sendiri,Pelajar,Layak
+Sri Yulianti,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Anak,K3,Baik,Kontrakan,IRT,Layak
+Yulianti,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Penyandang Disabilitas,Ibu,K1,Sangat Baik,Milik Sendiri,IRT,Tidak
+Asep Somantri,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Pemulung,Kepala Keluarga,K5,Kurang,Kontrakan,Pemulung,Layak
+Acep Hidayat,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Pemulung,Kepala Keluarga,K3,Kurang,Kontrakan,Pemulung,Layak
+Wawan Setiawan,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Pemulung,Kepala Keluarga,K3,Kurang,Kontrakan,Pemulung,Layak
+Cucu Supriatna,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Pemulung,Kepala Keluarga,K3,Kurang,Kontrakan,Pemulung,Layak
+Kasna,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Pemulung,Kepala Keluarga,K0,Kurang,Kontrakan,Pemulung,Layak
+Dewi Apriani Alfaresa,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Kelompok Minoritas,Anak,K0,Kurang,Kontrakan,Wiraswasta,Layak
+Chandra Nuggraha,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Bekas Warga Binaan Lembaga Pemasyarakatan,Anak,K1,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Mifia Taufik,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Bekas Warga Binaan Lembaga Pemasyarakatan,Kepala Keluarga,K2,Baik,Kontrakan,Karyawan Swasta,Layak
+Wawan Irawan,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Bekas Warga Binaan Lembaga Pemasyarakatan,Kepala Keluarga,K7,Baik,Kontrakan,Karyawan Swasta,Layak
+Dadang Umar Kosasih,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Bekas Warga Binaan Lembaga Pemasyarakatan,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Taufik Hidayat,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Korban Penyalahgunaan Napza,Anak,K5,Baik,Milik Sendiri,Karyawan Swasta,Layak
+Sulasih,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K4,Kurang,Kontrakan,IRT,Layak
+Any Kurniawati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Kontrakan,IRT,Layak
+Edah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K5,Kurang,Kontrakan,IRT,Layak
+Edja Kaswati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Ibu,K2,Kurang,Milik Sendiri,IRT,Tidak
+Rosi Rostika,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K6,Kurang,Kontrakan,IRT,Layak
+Encum,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Ibu,K0,Baik,Milik Sendiri,Wiraswasta,Tidak
+Yunanih,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Milik Sendiri,IRT,Layak
+Encum,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Tati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Milik Sendiri,IRT,Layak
+Yusuarti Andayani,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Kontrakan,IRT,Layak
+Tuti Suryati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K0,Kurang,Milik Sendiri,IRT,Layak
+Kateng,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Kurang,Milik Sendiri,IRT,Layak
+Wati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Milik Sendiri,IRT,Layak
+Ijah Djubaedah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K4,Kurang,Milik Sendiri,IRT,Layak
+Tati Rohayati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Kurang,Kontrakan,IRT,Layak
+Yeti Aisah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Ening,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Edah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Euis Badriah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Kontrakan,IRT,Layak
+Popong Kartini,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Kontrakan,IRT,Layak
+Yati Rohaiti,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Ibu,K2,Sangat Baik,Kontrakan,IRT,Tidak
+Sukaesih,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Ibu,K2,Baik,Kontrakan,IRT,Tidak
+Lia marliah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Ibu,K5,Kurang,Kontrakan,IRT,Layak
+Ium,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Ibu,K5,Kurang,Kontrakan,IRT,Layak
+Neneng Aminah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Asih Asiah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Cicih Carmanah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Usih,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K0,Kurang,Milik Sendiri,IRT,Layak
+Aah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Yayah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Imas Halimah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Kontrakan,IRT,Layak
+Kartini Nurul Hajati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Milik Sendiri,Pensiunan,Layak
+Entar,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Kokon Hidayah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Dewi Trisnawati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Kontrakan,IRT,Layak
+Nyai Rodiyah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K0,Kurang,Milik Sendiri,IRT,Layak
+Hodijah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Kurang,Kontrakan,IRT,Layak
+Sunarti,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Dedi Roedi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Edi Sutardi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K6,Kurang,Kontrakan,Buruh,Layak
+Yusak Budi Suproho,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Baik,Milik Sendiri,Karyawan Swasta,Layak
+Dono,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Sarip,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K6,Kurang,Kontrakan,Wiraswasta,Layak
+Dadan Dermawan,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K6,Baik,Milik Sendiri,Karyawan Swasta,Layak
+Bambang S. Nugroho,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Suyatno,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K6,Kurang,Kontrakan,Wiraswasta,Layak
+Jajang Gandi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Mamit Hidayat,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Benyamin Pelupessy,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Karyawan Swasta,Layak
+Ridwan,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Baik,Milik Sendiri,Karyawan Swasta,Layak
+Tosin,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Milik Sendiri,Buruh,Layak
+Toni,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Alu,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Toto Rustian,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Ating,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Baik,Milik Sendiri,IRT,Tidak
+Aep Amin,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,Buruh,Layak
+Rohendi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Buruh,Layak
+Ujang Iji,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Didin Sopyan,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Buruh,Layak
+Ara,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Dirun,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Cukup,Kontrakan,Wiraswasta,Layak
+Mumun,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,Buruh,Layak
+Soma,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Dadang,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Cukup,Kontrakan,Wiraswasta,Layak
+Hendri Mulyadi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Rudi Setiawan,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Wiraswasta,Layak
+Dadang,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Aa Nanang,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Dadi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Cukup,Milik Sendiri,Karyawan Swasta,Layak
+Saefulloh,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Endang Rohiman,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Buruh,Layak
+Apin,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Milik Sendiri,Buruh,Layak
+Tatang Tajudin,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Ayi Sulaeman,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Cukup,Kontrakan,Karyawan Swasta,Layak
+Nana Sumarna,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Wiraswasta,Layak
+Encu,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K6,Kurang,Milik Sendiri,Buruh,Layak
+Ujang Mulyana,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Buruh,Layak
+Umar,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Yuyun Yunus,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Adeng Permana,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Cece Sasmita,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Wiraswasta,Layak
+Sopanji,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Wiraswasta,Layak
+Zul Bahri,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Karyawan Swasta,Layak
+Gugun Santoyo,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Wiraswasta,Layak
+Engkos,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Yadi Muhidin,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Mudrikah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Maman,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Utun David Hermantara,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Karyawan Swasta,Layak
+Sayat,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Cukup,Milik Sendiri,Buruh,Layak
+Apen,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Milik Sendiri,Buruh,Layak
+Sobari,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Ajang Saripiin,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Didi ,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Lili Somantri,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Darmini,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Acah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Rohotie,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,IRT,Layak
+Aming,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Ma'un,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Cukup,Milik Sendiri,Buruh,Layak
+A'an,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Ating,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Milik Sendiri,Buruh,Layak
+Endang Suherman,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Uju Juriah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Adang,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K8,Cukup,Kontrakan,Buruh,Layak
+Sati,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Entin Surtini,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,IRT,Layak
+Tedi Sukmayadi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Rudi Hasiholah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Muhtar,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Sadri,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Hadin Sumardi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Abdul Yamin,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Ita Tarsih,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Ibu,K0,Baik,Milik Sendiri,IRT,Tidak
+Odah,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Ibu,K0,Sangat Baik,Milik Sendiri,IRT,Tidak
+Aan S,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Entas,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Iyan Gunawan,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Oneng,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Kosim,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Dayat,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Milik Sendiri,Buruh,Layak
+Iyi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Karyawan Swasta,Layak
+Nakim,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Cukup,Kontrakan,Wiraswasta,Layak
+Undang,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Yolman Jamil Koto,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Anan,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Acep Supriadi,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Cukup,Kontrakan,Buruh,Layak
+Syaripudin,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Yeni Nurani,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Windu Wulan ,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Cepi Nurani,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Cukup,Milik Sendiri,Karyawan Swasta,Layak
+Tatang Mulyana,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Asri,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Oneng,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Ibu,K2,Baik,Milik Sendiri,IRT,Tidak
+Empun,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Ijoh,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,IRT,Layak
+Anih,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Isa Musa,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Uju Hendra ,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Ikmal David Permana,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Ukar,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Dudung Juhria,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K4,Cukup,Milik Sendiri,Buruh,Layak
+Kombar,Jl. Merkuri Utara XII No 11A RT 03 RW 03,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Rosad,Jl. Manjahlega Rt.04 Rw.13,Fakir Miskin,Kepala Keluarga,K7,Kurang,Kontrakan,Buruh,Layak
+Maskuro,Jl. Manjahlega Rt.04 Rw.13,Fakir Miskin,Kepala Keluarga,K7,Kurang,Milik Sendiri,Buruh,Layak
+Andi Purnama,Jl. Manjahlega Rt.04 Rw.13,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Herdin Kaharudin,Jl. Manjahlega RT.01 RW.13,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Buruh,Layak
+Rasmanah,Jl. Manjahlega RT.01 RW.13,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Rasih,Jl. Manjahlega RT03 RW.13,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Oom,Jl. Manjahlega RT03 RW.13,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,IRT,Layak
+Ayi Patonah,Jl. Manjahlega RT03 RW.13,Fakir Miskin,Kepala Keluarga,K0,Kurang,Milik Sendiri,IRT,Layak
+Cicih,Jl. Manjahlega RT03 RW.13,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,IRT,Layak
+Aisah,Jl. Manjahlega RT03 RW.14,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,IRT,Layak
+Iboh,Jl. Manjahlega RT03 RW.15,Fakir Miskin,Kepala Keluarga,K0,Cukup,Kontrakan,IRT,Layak
+Siti Rohtini,Jl. Manjahlega RT03 RW.16,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,IRT,Layak
+Taryana,Jl. Manjahlega RT03 RW.17,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Yanto,Jl. Manjahlega RT03 RW.18,Fakir Miskin,Kepala Keluarga,K5,Kurang,Milik Sendiri,Buruh,Layak
+Abas Setiana,Jl. Manjahlega RT03 RW.19,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Yayat,Jl. Manjahlega RT03 RW.20,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Senda,Jl. Manjahlega RT03 RW.21,Fakir Miskin,Kepala Keluarga,K6,Kurang,Kontrakan,Buruh,Layak
+Komarudin,Jl. Manjahlega RT03 RW.22,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Amin Alimin,Jl. Manjahlega RT03 RW.23,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Buruh,Layak
+Dadan Abidin,Jl. Manjahlega RT03 RW.24,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,Buruh,Layak
+Empat,Jl. Manjahlega Rt.04 Rw.13,Fakir Miskin,Kepala Keluarga,K0,Kurang,Milik Sendiri,IRT,Layak
+Oom Hamsah,Jl. Manjahlega Rt.04 Rw.14,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,IRT,Layak
+Elah,Jl. Manjahlega Rt.04 Rw.15,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,IRT,Layak
+Alan Dimyati,Jl. Manjahlega Rt.04 Rw.16,Fakir Miskin,Kepala Keluarga,K1,Kurang,Milik Sendiri,Wiraswasta,Layak
+Cengceng,Jl. Manjahlega Rt.04 Rw.17,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Buruh,Layak
+Sueb,Jl. Manjahlega Rt.04 Rw.18,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Cep Enuh,Jl. Manjahlega Rt.04 Rw.19,Fakir Miskin,Kepala Keluarga,K0,Cukup,Kontrakan,Wiraswasta,Layak
+Ikah,Jl. Manjahlega RT.05 RW.13,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Onih,Jl. Manjahlega RT.05 RW.14,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,IRT,Layak
+Aan Rosanah,Jl. Manjahlega RT.05 RW.15,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,IRT,Layak
+Cacih,Jl. Manjahlega RT.05 RW.16,Fakir Miskin,Kepala Keluarga,K1,Kurang,Milik Sendiri,IRT,Layak
+Enceng Rahmat,Jl. Manjahlega RT.01 RW.13,Fakir Miskin,Kepala Keluarga,K5,Kurang,Kontrakan,Pemulung,Layak
+Nanang Rukyat,Jl. Manjahlega Rt.04 RW.13,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Kiki Permana,Jl. Manjahlega RT. 03 RW.13,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Dudung,Jl. Manjahlega Rt.04 Rw.13,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Atam,Jl. Manjahlega Rt.04 Rw.13,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Ana,Jl. Manjahlega Rt.04 Rw.13,Fakir Miskin,Kepala Keluarga,K4,Cukup,Milik Sendiri,Karyawan Swasta,Layak
+Undang,Jl. Manjahlega RT.01 RW.13,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Mulyadi,Jl. Manjahlega RT.01 RW.13,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Asep Enjan,Jl. Manjahlega RT03 RW.13,Fakir Miskin,Kepala Keluarga,K6,Kurang,Milik Sendiri,Buruh,Layak
+Suryana,Jl. Manjahlega RT03 RW.13,Fakir Miskin,Kepala Keluarga,K4,Cukup,Kontrakan,Karyawan Swasta,Layak
+Iim Sukandi,Jl. Manjahlega RT03 RW.13,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Buruh,Layak
+Oden,Jl. Manjahlega RT03 RW.13,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Jojo Hartono,Jl. Manjahlega RT03 RW.14,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Galih Pangestu,Jl. Manjahlega RT03 RW.15,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Suhaedah,Jl. Manjahlega RT03 RW.16,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,IRT,Layak
+Hendi Setiawan,Jl. Manjahlega RT03 RW.17,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Ayi Rohimah,Jl. Manjahlega RT03 RW.18,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Nazli Bahar,Jl. Manjahlega RT03 RW.19,Keluarga Bermasalah Sosial Psikologi,Kepala Keluarga,K5,Sangat Baik,Milik Sendiri,Pensiunan,Tidak
+Budiman Natapura,Jl. Manjahlega RT03 RW.20,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Wawanto,Jl. Manjahlega RT03 RW.21,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Effentrif,Jl. Manjahlega RT03 RW.22,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Moh. Machdi,Jl. Manjahlega RT03 RW.23,Lansia Terlantar,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Renny Reviati,Jl. Manjahlega RT03 RW.24,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Agus Mardiana,Jl. Manjahlega Rt.04 Rw.13,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Syaifudin Jufri,Jl. Manjahlega Rt.04 Rw.14,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Andi Nanda Rosa,Jl. Manjahlega Rt.04 Rw.15,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Priyadi Hadi,Jl. Manjahlega Rt.04 Rw.17,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Kosdarma,Jl. Manjahlega Rt.04 Rw.18,Fakir Miskin,Kepala Keluarga,K0,Cukup,Milik Sendiri,Wiraswasta,Layak
+Karuniawan,Jl. Manjahlega Rt.04 Rw.19,Fakir Miskin,Kepala Keluarga,K0,Cukup,Milik Sendiri,Wiraswasta,Layak
+Sudirdja Djajadiredja,Jl. Manjahlega RT.05 RW.13,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Komariah Sudirman,Jl. Manjahlega RT.05 RW.14,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Budi Taufiq Rahman,Jl. Manjahlega RT.05 RW.15,Fakir Miskin,Kepala Keluarga,K0,Cukup,Kontrakan,Buruh,Layak
+Ade Rosidah,Jl. Manjahlega RT.01 RW.13,Fakir Miskin,Ibu,K2,Kurang,Kontrakan,IRT,Layak
+Lela Rosmayati,Jl. Manjahlega Rt.04 RW.13,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,Wiraswasta,Layak
+Pangkal Yusetiati,Jl. Manjahlega RT. 03 RW.13,Fakir Miskin,Kepala Keluarga,K1,Kurang,Milik Sendiri,Buruh,Layak
+Sunarto,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Agus Salman,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Pemulung,Layak
+Sutrisno,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Budi Firmanto,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Sukma Wirasarjaya,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Milik Sendiri,Wiraswasta,Layak
+R. Muhammad Sepriyadi,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Wiraswasta,Layak
+Linda Elfrida Djumiati,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Dadang Kartiwa,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+R. Tiny Pryatini,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Wiraswasta,Layak
+Yano Haryono,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Nandang Susesna,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Yeti Hadiwiyati,RW 06,Fakir Miskin,Ibu,K3,Kurang,Kontrakan,Buruh,Layak
+H. Asep Yahya,RW 06,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Teten Kusnandar,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Jurnaelah Yati,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Tb. Unwan Afifi,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Ariyati Hadining F,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Ani Kusniawati,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Euis Atty Sukma,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+M. Iqbal Sukma G,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Achmad Sutiknjo,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Erwin Teguh A,RW 06,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Arnelia,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Mariah Djahunah,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Subarnas,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Tini Rustini,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Wiraswasta,Layak
+Hanah Nur Jamilah,RW 06,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Djoko,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Sucipto,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Purwanto,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Yulfikri,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Wiraswasta,Layak
+Damas Hidayat,RW 06,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Mahfudin Cakra S,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Een Sobandi,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Karyawan Swasta,Layak
+Muhamad Farid,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Anto Purwanto,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Wiraswasta,Layak
+Nunung,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Anda Suhanda,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Akun Kusnadi,RW 06,Penyandang Disabilitas,Kepala Keluarga,K0,Cukup,Kontrakan,Wiraswasta,Layak
+Endang Ramdhan,RW 06,Penyandang Disabilitas,Kepala Keluarga,K1,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Syamsuddin D. M.,RW 06,Penyandang Disabilitas,Kepala Keluarga,K3,Sangat Baik,Milik Sendiri,Karyawan Swasta,Layak
+Laelasari,RW 06,Penyandang Disabilitas,Ibu,K0,Sangat Baik,Milik Sendiri,IRT,Tidak
+Devi Noviana,RW 06,Penyandang Disabilitas,Anak,K1,Baik,Milik Sendiri,Pelajar,Tidak
+Eko Prasetyo,RW 06,Penyandang Disabilitas,Kepala Keluarga,K1,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Fatach Suryana,RW 06,Penyandang Disabilitas,Kepala Keluarga,K2,Sangat Baik,Kontrakan,ASN,Tidak
+Sena Adi Nugraha,RW 06,Penyandang Disabilitas,Anak,K0,Cukup,Kontrakan,Pelajar,Layak
+Wahyudin,RW 06,Penyandang Disabilitas,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Yadi Kusmayadi,RW 06,Penyandang Disabilitas,Kepala Keluarga,K1,Baik,Milik Sendiri,Wiraswasta,Tidak
+E. Muchtar,RW 06,Penyandang Disabilitas,Kepala Keluarga,K1,Sangat Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Deded Sarifudin,RW 06,Penyandang Disabilitas,Kepala Keluarga,K3,Cukup,Kontrakan,Buruh,Layak
+Imas Sumarni,RW 06,Penyandang Disabilitas,Ibu,K0,Kurang,Kontrakan,IRT,Layak
+Ade Sugih Darussalam,RW 06,Penyandang Disabilitas,Anak,K1,Kurang,Kontrakan,Tidak bekerja,Layak
+Doyo Sudaryat,RW 06,Penyandang Disabilitas,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Franky A. Tanzil,RW 06,Penyandang Disabilitas,Anak,K1,Sangat Baik,Milik Sendiri,Tidak bekerja,Tidak
+Sony Heldah,RW 06,Penyandang Disabilitas,Kepala Keluarga,K3,Cukup,Kontrakan,Wiraswasta,Layak
+Imas Ratnawati,RW 06,Penyandang Disabilitas,Ibu,K1,Baik,Milik Sendiri,IRT,Tidak
+Ari Darmana,RW 06,Penyandang Disabilitas,Kepala Keluarga,K2,Sangat Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Muajarah,RW 06,Penyandang Disabilitas,Ibu,K1,Cukup,Kontrakan,IRT,Layak
+Aam Aminah,RW 06,Penyandang Disabilitas,Ibu,K1,Kurang,Kontrakan,IRT,Layak
+Kandar Natsuanda,RW 06,Penyandang Disabilitas,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Rita Ratnawati,RW 06,Penyandang Disabilitas,Ibu,K3,Cukup,Milik Sendiri,IRT,Layak
+Hestiyanto,RW 06,Penyandang Disabilitas,Kepala Keluarga,K3,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Budi Rinaldi,RW 06,Penyandang Disabilitas,Kepala Keluarga,K2,Cukup,Kontrakan,Buruh,Layak
+Ayi Dedeh Rodinah,RW 06,Penyandang Disabilitas,Kepala Keluarga,K1,Kurang,Kontrakan,Tidak bekerja,Layak
+H. Saiful Echwan,RW 06,Penyandang Disabilitas,Kepala Keluarga,K1,Kurang,Kontrakan,Tidak bekerja,Layak
+Acih,RW 06,Penyandang Disabilitas,Kepala Keluarga,K2,Kurang,Kontrakan,Tidak bekerja,Layak
+Dadi,RW 06,Fakir Miskin,Kepala Keluarga,K2,Cukup,Milik Sendiri,Karyawan Swasta,Layak
+Saefulloh,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Endang Rohiman,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Milik Sendiri,Buruh,Layak
+Apin,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Milik Sendiri,Buruh,Layak
+Tatang Tajudin,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Ayi Sulaeman,RW 06,Fakir Miskin,Kepala Keluarga,K1,Cukup,Kontrakan,Karyawan Swasta,Layak
+Nana Sumarna,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Encu,RW 06,Fakir Miskin,Kepala Keluarga,K4,Kurang,Milik Sendiri,Buruh,Layak
+Ujang Mulyana,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,Buruh,Layak
+Umar,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Yuyun Yunus,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Adeng Permana,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Cece Sasmita,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Milik Sendiri,Wiraswasta,Layak
+Sopanji,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Wiraswasta,Layak
+Zul Bahri,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Karyawan Swasta,Layak
+Gugun Santoyo,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Engkos,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Yadi Muhidin,RW 06,Fakir Miskin,Kepala Keluarga,K4,Kurang,Kontrakan,Buruh,Layak
+Tezar,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Ateng,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Edwar,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Marwety,RW 06,Fakir Miskin,Ibu,K2,Kurang,Milik Sendiri,Wiraswasta,Layak
+Taufiq Hidayah Tri Anondo,RW 06,Anak Dalam Kedistabilitasan,Anak,K1,Baik,Milik Sendiri,Wiraswasta,Layak
+Rady Setio Rachim,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Rodiah,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Cukup,Kontrakan,Wiraswasta,Layak
+Agung Riyadi,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Gandana,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Milik Sendiri,Wiraswasta,Layak
+Didi Suhardi,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Milik Sendiri,Karyawan Swasta,Layak
+Dede Hermawan,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Tenno,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Awan,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Memed,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Nandang Sukman,RW 06,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Dr. Dodo Suhendar,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Erat,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Tegar,RW 06,Anak Dalam Kedistabilitasan,Anak,K1,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Deny,RW 06,Anak Dalam Kedistabilitasan,Anak,K1,Cukup,Kontrakan,Karyawan Swasta,Layak
+Djaka,RW 06,Anak Dalam Kedistabilitasan,Anak,K1,Sangat Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Anwir Kepo,RW 06,Keluarga Berumah Tak Layak Huni,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Abdul Rachman,RW 06,Anak Dalam Kedistabilitasan,Anak,K1,Kurang,Kontrakan,Tidak bekerja,Layak
+Irsad,RW 06,Anak Dalam Kedistabilitasan,Anak,K1,Kurang,Kontrakan,Pelajar,Layak
+Steven J.R Sutrisno,RW 06,Keluarga Bermasalah Sosial Psikologi,Kepala Keluarga,K1,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Dida Supriatna,RW 06,Anak Dalam Kedistabilitasan,Anak,K1,Cukup,Kontrakan,Pelajar,Layak
+Ilyas,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Afiandry,RW 06,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Wiraswasta,Layak
+Rudi Barkah Kerta Permana,RW 06,Fakir Miskin,Kepala Keluarga,K4,Cukup,Milik Sendiri,Buruh,Layak
+Iman Munajat,RW 06,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,Buruh,Layak
+Yetty Heryati Sastranegara,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Benny Tatang Sutana,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Lala M. Yusuf,RW 06,Fakir Miskin,Kepala Keluarga,K1,Kurang,Milik Sendiri,Buruh,Layak
+Mohamad Masyhudi,RW 06,Fakir Miskin,Kepala Keluarga,K1,Cukup,Kontrakan,Wiraswasta,Layak
+Rinna Kunrat,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Cukup,Kontrakan,Wiraswasta,Layak
+Hendi Yusup,RW 06,Fakir Miskin,Kepala Keluarga,K4,Cukup,Kontrakan,Buruh,Layak
+Sianne Hasan,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Amelia sriwinarti,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Cukup,Milik Sendiri,Wiraswasta,Tidak
+Afyna mahardika,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Nani suwarni,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Tjiong min on,RW 06,Kelompok Minoritas,Kepala Keluarga,K1,Cukup,Milik Sendiri,Karyawan Swasta,Tidak
+Ukar,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Milik Sendiri,Buruh,Layak
+Dadang gumilar,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Ilah,RW 06,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Kurang,Kontrakan,Karyawan Swasta,Layak
+Aziz,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Tidak bekerja,Layak
+Dudung,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Milik Sendiri,Tidak bekerja,Layak
+Sadu,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Achyar,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Janwar maulidi,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Haris udayana,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Tidak bekerja,Layak
+Muhamad andi,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Poni ariefian,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Tidak bekerja,Layak
+Donni megasenjaya,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Tidak bekerja,Layak
+Dwi prasetya budiman,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Tidak bekerja,Layak
+Vicky wiharmawan,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Tidak bekerja,Layak
+Amir rizahdi,RW 06,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Anna rosana,RW 12,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Ida farida,RW 12,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Cukup,Milik Sendiri,Karyawan Swasta,Tidak
+Ida ayu s. Leviyanti,RW 12,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Abdul Malik,RW 12,Korban Penyalahgunaan Napza,Anak,K1,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Dirja Maulana,RW 12,Lansia Terlantar,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Ujang Mulyana,RW 12,Lansia Terlantar,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Setiabudin khalafi,RW 12,Lansia Terlantar,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Dwi Yanto,RW 12,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Adi Sopyan,RW 12,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Agus Pratama,RW 12,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Fikri Maida,RW 12,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Muhammad Muharom,RW 12,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Ikhsan Fikri,RW 12,Lansia Terlantar,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Fandi Ristanto,RW 12,Korban Penyalahgunaan Napza,Kepala Keluarga,K2,Cukup,Kontrakan,Wiraswasta,Layak
+Poetry Afni,RW 12,Korban Penyalahgunaan Napza,Kepala Keluarga,K2,Cukup,Kontrakan,Wiraswasta,Layak
+Rifqi Pratama,RW 12,Korban Penyalahgunaan Napza,Kepala Keluarga,K1,Sangat Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Aisyah Serly,RW 04,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Cukup,Kontrakan,Wiraswasta,Layak
+Basri Anwar,RW 04,Korban Penyalahgunaan Napza,Kepala Keluarga,K0,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Fahma,RW 04,Korban Penyalahgunaan Napza,Anak,K1,Sangat Baik,Milik Sendiri,Tidak bekerja,Tidak
+Tri Tianti,RW 04,Penyandang Disabilitas,Kepala Keluarga,K1,Sangat Baik,Milik Sendiri,ASN,Tidak
+Rida Rizky,RW 04,Penyandang Disabilitas,Anak,K2,Cukup,Kontrakan,Karyawan Swasta,Layak
+Yeni Agustini,RW 04,Penyandang Disabilitas,Kepala Keluarga,K0,Sangat Baik,Milik Sendiri,Karyawan Swasta,Layak
+Dadang Dwi Resmana,RW 04,Penyandang Disabilitas,Kepala Keluarga,K0,Baik,Kontrakan,Karyawan Swasta,Tidak
+Iqbal,RW 04,Penyandang Disabilitas,Kepala Keluarga,K1,Sangat Baik,Kontrakan,Karyawan Swasta,Tidak
+Nisa Salma Islami,RW 04,Penyandang Disabilitas,Anak,K2,Cukup,Kontrakan,Pelajar,Layak
+Salsa Febriana,RW 04,Penyandang Disabilitas,Anak,K1,Kurang,Kontrakan,Pelajar,Layak
+Puspita,RW 04,Penyandang Disabilitas,Anak,K1,Kurang,Kontrakan,Tidak bekerja,Layak
+Dita Cahyani,RW 04,Penyandang Disabilitas,Ibu,K0,Baik,Milik Sendiri,IRT,Tidak
+Lira,RW 04,Penyandang Disabilitas,Ibu,K1,Sangat Baik,Milik Sendiri,IRT,Tidak
+Rizky Arifin,RW 04,Penyandang Disabilitas,Kepala Keluarga,K2,Kurang,Kontrakan,Tidak bekerja,Layak
+Sandri Anggara,RW 04,Penyandang Disabilitas,Anak,K1,Cukup,Kontrakan,Pelajar,Layak
+Taufik Akbar,RW 04,Penyandang Disabilitas,Anak,K3,Cukup,Kontrakan,Pelajar,Layak
+Syaeful,RW 04,Penyandang Disabilitas,Kepala Keluarga,K0,Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Yunansyah,RW 16,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Supriatna,RW 16,Fakir Miskin,Kepala Keluarga,K2,Kurang,Milik Sendiri,Buruh,Layak
+Ilham Reski,RW 16,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Ahmad Maulana,RW 16,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Nurhayati,RW 16,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Milik Sendiri,Buruh,Layak
+Windi Yanti,RW 16,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Hendar,RW 16,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Yuda Jaka,RW 16,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Atang Sanjaya,RW 16,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Buruh,Layak
+Nisa Alifia,RW 16,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Safiryan,RW 16,Keluarga Bermasalah Sosial Psikologi,Kepala Keluarga,K1,Sangat Baik,Milik Sendiri,Wiraswasta,Tidak
+Ajat Mulyana,RW 16,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Ramadhana,RW 16,Penyandang Disabilitas,Anak,K4,Baik,Kontrakan,Pelajar,Layak
+Rizal Fauzi,RW 16,Anak Dalam Kedistabilitasan,Anak,K2,Kurang,Kontrakan,Tidak bekerja,Layak
+Mega Mustika,RW 16,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Fachrul Fariz Ferdiansyah,RW 16,Keluarga Bermasalah Sosial Psikologi,Kepala Keluarga,K2,Cukup,Kontrakan,Wiraswasta,Layak
+Yatna Priana,RW 16,Fakir Miskin,Kepala Keluarga,K3,Cukup,Kontrakan,Wiraswasta,Layak
+Rahmat Hidayat,RW 16,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Muhammad Shidiq,RW 16,Anak Dalam Kedistabilitasan,Anak,K2,Baik,Milik Sendiri,Pelajar,Tidak
+Iis Mulyati,RW 16,Anak Dalam Kedistabilitasan,Anak,K3,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Alya Rahma,RW 16,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Kurang,Kontrakan,Buruh,Layak
+Moch. Arifin Ilham,RW 16,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Milik Sendiri,Tidak bekerja,Layak
+Nabil Nurbani,RW 16,Fakir Miskin,Kepala Keluarga,K3,Kurang,Kontrakan,Buruh,Layak
+Ayu Hediyanti,RW 16,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Fanira,RW 01,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Faisal Yusuf Firdaus,RW 01,Lansia Terlantar,Kepala Keluarga,K0,Kurang,Kontrakan,Tidak bekerja,Layak
+Fauzul Maliki,RW 01,Lansia Terlantar,Kepala Keluarga,K1,Kurang,Kontrakan,Tidak bekerja,Layak
+Hamdan Dani Maulana,RW 01,Fakir Miskin,Kepala Keluarga,K1,Kurang,Kontrakan,Buruh,Layak
+Eky Maulana,RW 01,Fakir Miskin,Kepala Keluarga,K0,Kurang,Milik Sendiri,Tidak bekerja,Layak
+Widza Nurhaliza,RW 01,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Baik,Milik Sendiri,Wiraswasta,Tidak
+Sandi Maulana,RW 01,Fakir Miskin,Kepala Keluarga,K0,Kurang,Kontrakan,Pemulung,Layak
+Nuraeni Mahaputri,RW 01,Tuna Susila,Ibu,K0,Kurang,Kontrakan,Wiraswasta,Layak
+Neng Kaesih,RW 07,Tuna Susila,Ibu,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Azzaharani Rianti P,RW 07,Tuna Susila,Ibu,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Imam Syarif,RW 07,Kelompok Minoritas,Kepala Keluarga,K2,Sangat Baik,Milik Sendiri,Karyawan Swasta,Tidak
+Adelia Lestari,RW 07,Anak Dalam Kedistabilitasan,Anak,K1,Sangat Baik,Milik Sendiri,Pelajar,Tidak
+Ninin,RW 07,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Cukup,Kontrakan,Buruh,Layak
+Aab abdullah,RW 07,Fakir Miskin,Kepala Keluarga,K2,Cukup,Kontrakan,Wiraswasta,Layak
+Nathan Malik,RW 07,Fakir Miskin,Kepala Keluarga,K1,Cukup,Kontrakan,Wiraswasta,Layak
+Alya Putri,RW 07,Tuna Susila,Kepala Keluarga,K1,Kurang,Kontrakan,Wiraswasta,Layak
+Rohimah,RW 07,Fakir Miskin,Kepala Keluarga,K1,Cukup,Kontrakan,Buruh,Layak
+Siti Hopipah,RW 07,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K3,Cukup,Kontrakan,Buruh,Layak
+Dina Oktaviani,RW 07,Tuna Susila,Ibu,K4,Cukup,Kontrakan,Wiraswasta,Layak
+Rositawati,RW 07,Tuna Susila,Kepala Keluarga,K3,Kurang,Kontrakan,Wiraswasta,Layak
+Yani,RW 07,Perempuan Rawan Sosial Ekonomi,Kepala Keluarga,K1,Kurang,Kontrakan,Karyawan Swasta,Layak
+Youda Subagja,RW 07,Fakir Miskin,Kepala Keluarga,K2,Kurang,Kontrakan,Wiraswasta,Layak
+Cucu,RW 07,Fakir Miskin,Kepala Keluarga,K1,Cukup,Kontrakan,Wiraswasta,Layak
+Euis,RW 07,Fakir Miskin,Kepala Keluarga,K3,Cukup,Kontrakan,Buruh,Layak

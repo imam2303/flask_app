@@ -32,36 +32,28 @@
         <thead>
           <tr>
             <th>Nama</th>
-            <th>Jenis Kelamin</th>
-            <th>Tempat Lahir</th>
-            <th>Pendidikan</th>
-            <th>No Hp</th>
-            <th>Jabatan</th>
-            <th>Penempatan</th>
-            <th>Lama Kerja</th>
-            <th>Kehadiran</th>
-            <th>Sikap</th>
-            <th>Tanggung Jawab</th>
-            <th>Pencapaian</th>
-            <th>Keputusan</th>
+            <th>Alamat</th>
+            <th>Jenis PMKS</th>
+            <th>Hubungan dalam Keluarga</th>
+            <th>Jumlah Tanggungan Kepala Keluarga</th>
+            <th>Pendapatan Keluarga</th>
+            <th>Status Rumah</th>
+            <th>Pekerjaan</th>
+            <th>Kelayakan</th>
           </tr>
         </thead>
         <tbody>
           {% for i in data %}
           <tr>
             <td>{{ i.nama }}</td>
-            <td>{{ i.jenis_kelamin}}</td>
-            <td>{{ i.tempat_lahir}}</td>
-            <td>{{ i.pendidikan}}</td>
-            <td>{{ i.no.hp}}</td>
-            <td>{{ i.jabatan}}</td>
-            <td>{{ i.penempatan}}</td>
-            <td>{{ i.lama_kerja}}</td>
-            <td>{{ i.kehadiran}}</td>
-            <td>{{ i.sikap}}</td>
-            <td>{{ i.tanggung_jawab}}</td>
-            <td>{{ i.pencapaian}}</td>
-            <td>{{ i.keputusan}}</td>
+            <td>{{ i.alamat }}</td>
+            <td>{{ i.jenis_pmks }}</td>
+            <td>{{ i.hubungan_dlm_keluarga }}</td>
+            <td>{{ i.jml_tanggungan_kepala_keluarga }}</td>
+            <td>{{ i.pendapatan_keluarga }}</td>
+            <td>{{ i.status_rumah }}</td>
+            <td>{{ i.pekerjaan }}</td>
+            <td>{{ i.layak_tidak }}</td>
           </tr>
           {% endfor %}
         </tbody>

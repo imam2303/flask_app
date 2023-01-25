@@ -212,18 +212,14 @@
       }) => {
         const [predictionData, setPredictionData] = React.useState({
           nama: "",
-          jenis_kelamin: "",
-          tempat_lahir: "",
-          pendidikan: "",
-          no_hp: "",
-          jabatan: "",
-          penempatan: "",
-          lama_kerja: "",
-          kehadiran: "",
-          sikap: "",
-          tanggung_jawab: "",
-          pencapaian: "",
-          keputusan: "",
+          alamat: "",
+          jenis_pmks: "",
+          hubungan_dlm_keluarga: "",
+          jml_tanggungan_kepala_keluarga: "",
+          pendapatan_keluarga: "",
+          status_rumah: "",
+          pekerjaan: "",
+          layak_tidak: "",
         });
 
         console.log(predictionDetailData);
@@ -249,7 +245,7 @@
                             title: "Berhasil!",
                             text: "Do you want to continue",
                             icon: "success",
-                            confirmButtonText: "Ok",
+                            confirmButtonText: "OK",
                           });
                           setRepopulate((prev) => !prev);
                           setModalShow(false);
@@ -278,33 +274,38 @@
                                   className="flex flex-col gap-y-4"
                                 >
                                   <h1 className="font-bold text-3xl">
-                                    Berdasarkan data karyawan yang telah
-                                    ditambahkan, maka hasil prediksi
+                                    Berdasarkan data dibawah :
                                   </h1>
                                   <h1 className="text-2xl font-medium">
                                     Nama : {predictionDetailData.nama}
                                   </h1>
                                   <h1 className="text-2xl font-bold">
-                                    Dengan ketentuan Nilai :
+                                    Jenis PMKS : {predictionDetailData.jenis_pmks}
                                   </h1>
                                   <h1>
-                                    Kehadiran : {predictionDetailData.kehadiran}
+                                    hubungan_dlm_keluarga {predictionDetailData.hubungan_dlm_keluarga}
                                   </h1>
-                                  <h1>Sikap : {predictionDetailData.sikap}</h1>
                                   <h1>
-                                    {" "}
-                                    Tanggung Jawab :{" "}
-                                    {predictionDetailData.tanggung_jawab}
-                                  </h1>
+                                    jml_tanggungan_kepala_keluarga : {predictionDetailData.jml_tanggungan_kepala_keluarga}</h1>
                                   <h1>
                                     {" "}
-                                    Pencapaian :{" "}
-                                    {predictionDetailData.pencapaian}
+                                    pendapatan_keluarga :{" "}
+                                    {predictionDetailData.pendapatan_keluarga}
+                                  </h1>
+                                  <h1>
+                                    {" "}
+                                    status_rumah :{" "}
+                                    {predictionDetailData.status_rumah}
+                                  </h1>
+                                  <h1>
+                                    {" "}
+                                    pekerjaan :{" "}
+                                    {predictionDetailData.pekerjaan}
                                   </h1>
                                   <h1 className="text-3xl font-bold uppercase">
                                     {" "}
                                     Maka hasil prediksi adalah :{" "}
-                                    {predictionDetailData.keputusan}
+                                    {predictionDetailData.layak_tidak}
                                   </h1>
                                 </div>
                               )}
@@ -337,260 +338,177 @@
 
                                     <div className="mb-6">
                                       <label
-                                        htmlFor="jenis_kelamin"
+                                        htmlFor="jenis_pmks"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                       >
-                                        Jenis Kelamin
+                                        Jenis PMKS
                                       </label>
                                       <select
                                         onChange={(e) =>
                                           setPredictionData((prev) => ({
                                             ...prev,
-                                            jenis_kelamin: e.target.value,
+                                            jenis_pmks: e.target.value,
                                           }))
                                         }
-                                        value={predictionData.jenis_kelamin}
+                                        value={predictionData.jenis_pmks}
                                         type="text"
-                                        id="jenis_kelamin"
+                                        id="jenis_pmks"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Jenis Kelamin Anda"
+                                        placeholder="Masukan Jenis PMKS"
                                         required
                                       >
-                                        <option value="L">Laki</option>
-                                        <option value="P">Cewe</option>
+                                        <option value="0">Anak Dalam Kedistabilitasan</option>
+                                        <option value="1">Bekas Warga Binaan Lembaga Kemasyarakatan</option>
+                                        <option value="2">Fakir Miskin</option>
+                                        <option value="3">Kelompok Minoritas</option>
+                                        <option value="4">Keluarga Bermasalah Sosial Psikologi</option>
+                                        <option value="5">Keluarga Berumah Tak Layak Huni</option>
+                                        <option value="6">Korban Penyalahgunaan Napza</option>
+                                        <option value="7">Lansia Terlantar</option>
+                                        <option value="8">Pemulung</option>
+                                        <option value="9">Penyandang Disabilitas</option>
+                                        <option value="10">Perempuan Rawan Sosial Ekonomi</option>
+                                        <option value="11">Tuna Susila</option>
                                       </select>
                                     </div>
 
                                     <div className="mb-6">
                                       <label
-                                        htmlFor="tempat_lahir"
+                                        htmlFor="hubungan_dlm_keluarga"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                       >
-                                        Tempat lahir
+                                        Hubungan Dalam Keluarga
+                                      </label>
+                                      <select
+                                        onChange={(e) =>
+                                          setPredictionData((prev) => ({
+                                            ...prev,
+                                            hubungan_dlm_keluarga: e.target.value,
+                                          }))
+                                        }
+                                        value={predictionData.hubungan_dlm_keluarga}
+                                        type="text"
+                                        id="hubungan_dlm_keluarga"
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="Masukan Hubungan Dalam Keluarga"
+                                        required
+                                        >
+                                        <option value="0">Anak</option>
+                                        <option value="1">Ibu</option>
+                                        <option value="2">Kepala Keluarga</option>
+                                      </select>
+                                    </div>
+
+                                    <div className="mb-6">
+                                      <label
+                                        htmlFor="jml_tanggungan_kepala_keluarga"
+                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                                      >
+                                        Jumlah Tanggungan Kepala Keluarga
                                       </label>
                                       <input
                                         onChange={(e) =>
                                           setPredictionData((prev) => ({
                                             ...prev,
-                                            tempat_lahir: e.target.value,
+                                            jml_tanggungan_kepala_keluarga: e.target.value,
                                           }))
                                         }
-                                        value={predictionData.tempat_lahir}
-                                        type="text"
-                                        id="tempat_lahir"
+                                        value={predictionData.jml_tanggungan_kepala_keluarga}
+                                        type="number"
+                                        id="jml_tanggungan_kepala_keluarga"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Jenis Tempat_lahir"
+                                        placeholder="Masukan Jumlah Tanggungan Kepala Keluarga"
                                         required
                                       />
                                     </div>
 
                                     <div className="mb-6">
                                       <label
-                                        htmlFor="pendidikan"
+                                        htmlFor="pendapatan_keluarga"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                       >
-                                        Pendidikan
+                                        Pendapatan Keluarga
                                       </label>
-                                      <input
+                                      <select
                                         onChange={(e) =>
                                           setPredictionData((prev) => ({
                                             ...prev,
-                                            pendidikan: e.target.value,
+                                            pendapatan_keluarga: e.target.value,
                                           }))
                                         }
-                                        value={predictionData.pendidikan}
-                                        type="text"
-                                        id="pendidikan"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Pendidikan Anda"
-                                        required
-                                      />
-                                    </div>
-
-                                    <div className="mb-6">
-                                      <label
-                                        htmlFor="no_hp"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                      >
-                                        No Hp
-                                      </label>
-                                      <input
-                                        onChange={(e) =>
-                                          setPredictionData((prev) => ({
-                                            ...prev,
-                                            no_hp: e.target.value,
-                                          }))
-                                        }
-                                        value={predictionData.no_hp}
+                                        value={predictionData.pendapatan_keluarga}
                                         type="number"
                                         id="no_hp"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan No_hp Anda"
+                                        placeholder="Masukan Pendapatan Keluarga"
                                         required
-                                      />
+                                        >
+                                        <option value="2">Kurang dari Rp. 1.000.000</option>
+                                        <option value="1">Cukup (Rp. 1.000.000 - Rp. 2.000.000)</option>
+                                        <option value="0">Baik (Rp. 2.000.000 - Rp. 3.000.000)</option>
+                                        <option value="3">Sangat Baik (Lebih dari Rp. 3.000.000)</option>
+                                      </select>
                                     </div>
 
                                     <div className="mb-6">
                                       <label
-                                        htmlFor="jabatan"
+                                        htmlFor="status_rumah"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                       >
-                                        Jabatan
+                                        Status Rumah
                                       </label>
-                                      <input
+                                      <select
                                         onChange={(e) =>
                                           setPredictionData((prev) => ({
                                             ...prev,
-                                            jabatan: e.target.value,
+                                            status_rumah: e.target.value,
                                           }))
                                         }
-                                        value={predictionData.jabatan}
+                                        value={predictionData.status_rumah}
                                         type="text"
-                                        id="jabatan"
+                                        id="status_rumah"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Jabatan Anda"
+                                        placeholder="Status Rumah Anda"
                                         required
-                                      />
+                                        >
+                                        <option value="0">Kontrakan</option>
+                                        <option value="1">Milik Sendiri</option>
+                                      </select>
                                     </div>
                                   </div>
 
                                   <div className="flex flex-col gap-y-4 w-full">
                                     <div className="mb-6">
                                       <label
-                                        htmlFor="penempatan"
+                                        htmlFor="pekerjaan"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                       >
-                                        Penempatan
+                                        Pekerjaan
                                       </label>
-                                      <input
+                                      <select
                                         onChange={(e) =>
                                           setPredictionData((prev) => ({
                                             ...prev,
-                                            penempatan: e.target.value,
+                                            pekerjaan: e.target.value,
                                           }))
                                         }
-                                        value={predictionData.penempatan}
+                                        value={predictionData.pekerjaan}
                                         type="text"
-                                        id="penempatan"
+                                        id="pekerjaan"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Penempatan Anda"
+                                        placeholder="Masukan Pekerjaan Anda"
                                         required
-                                      />
-                                    </div>
-
-                                    <div className="mb-6">
-                                      <label
-                                        htmlFor="lama_kerja"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                      >
-                                        Lama kerja
-                                      </label>
-                                      <input
-                                        onChange={(e) =>
-                                          setPredictionData((prev) => ({
-                                            ...prev,
-                                            lama_kerja: e.target.value,
-                                          }))
-                                        }
-                                        value={predictionData.lama_kerja}
-                                        type="text"
-                                        id="lama_kerja"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Lama_kerja Anda"
-                                        required
-                                      />
-                                    </div>
-
-                                    <div className="mb-6">
-                                      <label
-                                        htmlFor="kehadiran"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                      >
-                                        Kehadiran
-                                      </label>
-                                      <input
-                                        onChange={(e) =>
-                                          setPredictionData((prev) => ({
-                                            ...prev,
-                                            kehadiran: e.target.value,
-                                          }))
-                                        }
-                                        value={predictionData.kehadiran}
-                                        type="number"
-                                        id="kehadiran"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Nilai Kehadiran Anda"
-                                        required
-                                      />
-                                    </div>
-
-                                    <div className="mb-6">
-                                      <label
-                                        htmlFor="sikap"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                      >
-                                        Sikap
-                                      </label>
-                                      <input
-                                        onChange={(e) =>
-                                          setPredictionData((prev) => ({
-                                            ...prev,
-                                            sikap: e.target.value,
-                                          }))
-                                        }
-                                        value={predictionData.sikap}
-                                        type="number"
-                                        id="sikap"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Nilai Sikap Anda"
-                                        required
-                                      />
-                                    </div>
-
-                                    <div className="mb-6">
-                                      <label
-                                        htmlFor="tanggung_jawab"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                      >
-                                        Tanggung jawab
-                                      </label>
-                                      <input
-                                        onChange={(e) =>
-                                          setPredictionData((prev) => ({
-                                            ...prev,
-                                            tanggung_jawab: e.target.value,
-                                          }))
-                                        }
-                                        value={predictionData.tanggung_jawab}
-                                        type="number"
-                                        id="tanggung_jawab"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Nilai Tanggung_jawab Anda"
-                                        required
-                                      />
-                                    </div>
-
-                                    <div className="mb-6">
-                                      <label
-                                        htmlFor="pencapaian"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                      >
-                                        Pencapaian
-                                      </label>
-                                      <input
-                                        onChange={(e) =>
-                                          setPredictionData((prev) => ({
-                                            ...prev,
-                                            pencapaian: e.target.value,
-                                          }))
-                                        }
-                                        value={predictionData.pencapaian}
-                                        type="number"
-                                        id="pencapaian"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Masukan Nilai Pencapaian Anda"
-                                        required
-                                      />
+                                        >
+                                        <option value="0">ASN</option>
+                                        <option value="1">Buruh</option>
+                                        <option value="2">IRT</option>
+                                        <option value="3">Karyawan Swasta</option>
+                                        <option value="4">Pelajar</option>
+                                        <option value="5">Pemulung</option>
+                                        <option value="6">Pensiunan</option>
+                                        <option value="7">Tidak Bekerja</option>
+                                        <option vluea="8">Wiraswasta</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -653,23 +571,19 @@
         const [repopulateData, setRepopulate] = React.useState(false);
         const [predictionDetailData, setPredictionDetailData] = React.useState({
           nama: "",
-          jenis_kelamin: "",
-          tempat_lahir: "",
-          pendidikan: "",
-          no_hp: "",
-          jabatan: "",
-          penempatan: "",
-          lama_kerja: "",
-          kehadiran: "",
-          sikap: "",
-          tanggung_jawab: "",
-          pencapaian: "",
-          keputusan: "",
+          alamat: "",
+          jenis_pmks: "",
+          hubungan_dlm_keluarga: "",
+          jml_tanggungan_kepala_keluarga: "",
+          pendapatan_keluarga: "",
+          status_rumah: "",
+          pekerjaan: "",
+          layak_tidak: "",
         });
 
         const fetchData = async () => {
           const res = await PredictionService.GetPrediction();
-          await PredictionService.GetPredictionById(23);
+          await PredictionService.GetPredictionById(1);
           setData(await res);
         };
 
@@ -727,7 +641,7 @@
                       showCancelButton: true,
                       confirmButtonColor: "#3085d6",
                       cancelButtonColor: "#d33",
-                      confirmButtonText: "Iya, Aku mau Lgout",
+                      confirmButtonText: "Ya, Logout sekarang",
                     }).then((result) => {
                       if (result.isConfirmed) {
                         AuthService.Logout();
@@ -762,38 +676,32 @@
             <table className="w-full relative text-sm text-left text-gray-500 dark:text-gray-400 overflow-visible">
               <thead className="text-xs w-full text-gray-700 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
-                  <th className="px-6 py-3 w-full overflow-x-visible">Nama</th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
-                    Jenis Kelamin
+                    Nama
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
-                    Tempat Lahir
+                    Alamat
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
-                    Pendidikan
-                  </th>
-                  <th className="px-6 py-3 w-full overflow-x-visible">No Hp</th>
-                  <th className="px-6 py-3 w-full overflow-x-visible">
-                    Jabatan
+                    Jenis PMKS
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
-                    Penempatan
+                    Hubungan Dalam Keluarga
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
-                    Lama Kerja
+                    Jumlah Tanggungan Kepala Keluarga
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
-                    Kehadiran
-                  </th>
-                  <th className="px-6 py-3 w-full overflow-x-visible">Sikap</th>
-                  <th className="px-6 py-3 w-full overflow-x-visible">
-                    Tanggung Jawab
+                    Pendapatan Keluarga
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
-                    Pencapaian
+                    Status Rumah
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
-                    Keputusan
+                    Pekerjaan
+                  </th>
+                  <th className="px-6 py-3 w-full overflow-x-visible">
+                    Kelayakan
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">Aksi</th>
                 </tr>
@@ -812,19 +720,54 @@
                       {x.nama}
                     </th>
                     <td className="px-6 py-4">
-                      {x.jenis_kelamin === "P" ? "Perempuan" : "Laki Laki"}
+                      {x.alamat}
                     </td>
-                    <td className="px-6 py-4">{x.tempat_lahir}</td>
-                    <td className="px-6 py-4">{x.pendidikan}</td>
-                    <td className="px-6 py-4">{x.no_hp}</td>
-                    <td className="px-6 py-4">{x.jabatan}</td>
-                    <td className="px-6 py-4">{x.penempatan}</td>
-                    <td className="px-6 py-4">{x.lama_kerja}</td>
-                    <td className="px-6 py-4">{x.kehadiran}</td>
-                    <td className="px-6 py-4">{x.sikap}</td>
-                    <td className="px-6 py-4">{x.tanggung_jawab}</td>
-                    <td className="px-6 py-4">{x.pencapaian}</td>
-                    <td className="px-6 py-4">{x.keputusan}</td>
+                    <td className="px-6 py-4">
+                      {x.jenis_pmks === 0 ? "Anak dalam Kedistabilitasan"
+                        : x.jenis_pmks === 1 ? "Bekas Warga Binaan Lembaga Pemasyarakatan"
+                        : x.jenis_pmks === 2 ? "Fakir Miskin"
+                        : x.jenis_pmks === 3 ? "Kelompok Minoritas"
+                        : x.jenis_pmks === 4 ? "Keluarga Bermasalah Sosial Psikologi"
+                        : x.jenis_pmks === 5 ? "Keluarga Berumah Tak Layak Huni"
+                        : x.jenis_pmks === 6 ? "Korban Penyalahgunaan Napza"
+                        : x.jenis_pmks === 7 ? "Lansia terlantar"
+                        : x.jenis_pmks === 8 ? "Pemulung"
+                        : x.jenis_pmks === 9 ? "Penyandang Disabilitas"
+                        : x.jenis_pmks === 10 ? "Perempuan Rawan Sosial Ekonomi"
+                        : "Tuna Susila"}
+                    </td>
+                    <td className="px-6 py-4">
+                      {x.hubungan_dlm_keluarga === 0 ? "Anak"
+                        : x.hubungan_dlm_keluarga === 1 ? "Ibu"
+                        : "Kepala Keluarga"}
+                    </td>
+                    <td className="px-6 py-4">
+                      {x.jml_tanggungan_kepala_keluarga}
+                    </td>
+                    <td className="px-6 py-4">
+                      {x.pendapatan_keluarga === 0 ? "Baik"
+                        : x.pendapatan_keluarga === 1 ? "Cukup"
+                        : x.pendapatan_keluarga === 2 ? "Kurang"
+                        : "Sangat Baik"}
+                    </td>
+                    <td className="px-6 py-4">
+                      {x.status_rumah === 0 ? "Kontrakan"
+                        : "Milik Sendiri"}
+                    </td>
+                    <td className="px-6 py-4">
+                      {x.pekerjaan === 0 ? "ASN"
+                        : x.pekerjaan === 1 ? "Buruh"
+                        : x.pekerjaan === 2 ? "IRT"
+                        : x.pekerjaan === 3 ? "Karyawan Swasta"
+                        : x.pekerjaan === 4 ? "Pelajar"
+                        : x.pekerjaan === 5 ? "Pemulung"
+                        : x.pekerjaan === 6 ? "Pensiunan"
+                        : x.pekerjaan === 7 ? "Tidak Bekerja"
+                        : "Wiraswasta"}
+                    </td>
+                    <td className="px-6 py-4">
+                      {x.layak_tidak}
+                    </td>
                     <td className="px-6 py-4 gap-x-4">
                       <span
                         onClick={() => {
@@ -860,7 +803,7 @@
               <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                   <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                    Sign in to your account
+                    Masuk Akun
                   </h1>
                   <span className="text-red-500">{errorMsg}</span>
                   <form
@@ -927,7 +870,7 @@
                       type="submit"
                       className="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                     >
-                      Sign in
+                      Masuk
                     </button>
                     <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                       Don’t have an account yet?{" "}
@@ -952,7 +895,7 @@
             {!!TokenService.getToken() ? (
               <div className="flex relative gap-y-4 w-full p-8 flex-col">
                 <h1 className="text-3xl font-bold text-blac-900">
-                  Data Klasifikasi
+                  Data Prediksi PMKS
                 </h1>
                 <Table />
               </div>

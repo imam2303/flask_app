@@ -38,18 +38,14 @@ jwt = JWTManager(app)
 class DataPrediksi(fs_mixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nama = db.Column(db.String(30), nullable=False)
-    jenis_kelamin = db.Column(db.String(100), nullable=False)
-    tempat_lahir = db.Column(db.String(100), nullable=False)
-    pendidikan = db.Column(db.String(100), nullable=False)
-    no_hp = db.Column(db.Integer, nullable=False)
-    jabatan = db.Column(db.String(20), nullable=False)
-    penempatan = db.Column(db.String(20), nullable=False)
-    lama_kerja = db.Column(db.String(20), nullable=False)
-    kehadiran = db.Column(db.Integer, nullable=False)
-    sikap = db.Column(db.Integer, nullable=False)
-    tanggung_jawab = db.Column(db.Integer, nullable=False)
-    pencapaian = db.Column(db.Integer, nullable=False)
-    keputusan = db.Column(db.String(100), nullable=False)
+    alamat = db.Column(db.String(50), nullable=False)
+    jenis_pmks = db.Column(db.Integer, nullable=False)
+    hubungan_dlm_keluarga = db.Column(db.Integer, nullable=False)
+    jml_tanggungan_kepala_keluarga = db.Column(db.Integer, nullable=False)
+    pendapatan_keluarga = db.Column(db.Integer, nullable=False)
+    status_rumah = db.Column(db.Integer, nullable=False)
+    pekerjaan = db.Column(db.Integer, nullable=False)
+    layak_tidak = db.Column(db.String, nullable=False)
 
 
 @app.route("/login", methods=["POST"])
@@ -90,10 +86,12 @@ def predict():
     data = request.get_json()
 
     fitur = np.array([
-        int(data["kehadiran"]),
-        int(data["sikap"]),
-        int(data["tanggung_jawab"]),
-        int(data["pencapaian"])
+        int(data["jenis_pmks"]),
+        int(data["hubungan_dlm_keluarga"]),
+        int(data["jml_tanggungan_kepala_keluarga"]),
+        int(data["pendapatan_keluarga"]),
+        int(data["status_rumah"]),
+        int(data["pekerjaan"])
     ])
 
     numpyArray = [np.array(fitur)]
@@ -106,25 +104,21 @@ def predict():
 
     populate_data = DataPrediksi(
         nama=data["nama"],
-        jenis_kelamin=data["jenis_kelamin"],
-        tempat_lahir=data["tempat_lahir"],
-        pendidikan=data["pendidikan"],
-        no_hp=data["no_hp"],
-        jabatan=data["jabatan"],
-        penempatan=data["penempatan"],
-        lama_kerja=data["lama_kerja"],
-        kehadiran=data["kehadiran"],
-        sikap=data["sikap"],
-        tanggung_jawab=data["tanggung_jawab"],
-        pencapaian=data["pencapaian"],
-        keputusan=formated_predict
+        alamat=data["alamat"],
+        jenis_pmks=data["jenis_pmks"],
+        hubungan_dlm_keluarga=data["hubungan_dlm_keluarga"],
+        jml_tanggungan_kepala_keluarga=data["jml_tanggungan_kepala_keluarga"],
+        pendapatan_keluarga=data["pendapatan_keluarga"],
+        status_rumah=data["status_rumah"],
+        pekerjaan=data["pekerjaan"],
+        layak_tidak=formated_predict
     )
 
     db.session.add(populate_data)
     db.session.commit()
 
     return {
-        "keputusan": formated_predict
+        "layak_tidak": formated_predict
     }
 
 if __name__ == "__main__":
