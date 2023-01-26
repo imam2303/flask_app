@@ -181,10 +181,10 @@
           const requestData = {
             method: "post",
             headers: {
-              "Content-Type": "application/json; charset=utf-8",
+              "Content-Type": "application/json"
             },
             data: payload,
-            url: "predict",
+            url: "create-predict",
           };
           try {
             const res = await ApiService.customRequest(requestData);
@@ -279,6 +279,9 @@
                                   <h1 className="text-2xl font-medium">
                                     Nama : {predictionDetailData.nama}
                                   </h1>
+                                  <h1 className="text-2xl font-medium">
+                                    Alamat : {predictionDetailData.alamat}
+                                  </h1>
                                   <h1 className="text-2xl font-bold">
                                     Jenis PMKS : {predictionDetailData.jenis_pmks}
                                   </h1>
@@ -286,7 +289,8 @@
                                     hubungan_dlm_keluarga {predictionDetailData.hubungan_dlm_keluarga}
                                   </h1>
                                   <h1>
-                                    jml_tanggungan_kepala_keluarga : {predictionDetailData.jml_tanggungan_kepala_keluarga}</h1>
+                                    jml_tanggungan_kepala_keluarga : {predictionDetailData.jml_tanggungan_kepala_keluarga}
+                                  </h1>
                                   <h1>
                                     {" "}
                                     pendapatan_keluarga :{" "}
@@ -332,6 +336,28 @@
                                         id="nama"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         placeholder="Masukan Nama Anda"
+                                        required
+                                      />
+                                    </div>
+                                    <div className="mb-6 w-full">
+                                      <label
+                                        htmlFor="alamat"
+                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                                      >
+                                        Alamat
+                                      </label>
+                                      <input
+                                        onChange={(e) =>
+                                          setPredictionData((prev) => ({
+                                            ...prev,
+                                            alamat: e.target.value,
+                                          }))
+                                        }
+                                        value={predictionData.alamat}
+                                        type="text"
+                                        id="alamat"
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="Masukan Alamat Anda"
                                         required
                                       />
                                     </div>
@@ -437,8 +463,8 @@
                                           }))
                                         }
                                         value={predictionData.pendapatan_keluarga}
-                                        type="number"
-                                        id="no_hp"
+                                        type="text"
+                                        id="pendapatan_keluarga"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         placeholder="Masukan Pendapatan Keluarga"
                                         required
@@ -662,7 +688,7 @@
                   }
                 }}
                 className="bg-yellow-500 p-2 w-[200px] text-white rounded-lg"
-              >
+                >
                 Logout
               </button>
             </div>
@@ -678,12 +704,12 @@
                 <tr>
                   <th className="px-6 py-3 w-full overflow-x-visible">
                     Nama
-                  </th>
-                  <th className="px-6 py-3 w-full overflow-x-visible">
-                    Alamat
-                  </th>
-                  <th className="px-6 py-3 w-full overflow-x-visible">
-                    Jenis PMKS
+                    </th>
+                    <th className="px-6 py-3 w-full overflow-x-visible">
+                      Alamat
+                      </th>
+                      <th className="px-6 py-3 w-full overflow-x-visible">
+                        Jenis PMKS
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
                     Hubungan Dalam Keluarga
@@ -693,7 +719,7 @@
                   </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
                     Pendapatan Keluarga
-                  </th>
+                    </th>
                   <th className="px-6 py-3 w-full overflow-x-visible">
                     Status Rumah
                   </th>
@@ -708,8 +734,11 @@
               </thead>
 
               <tbody>
-                {getData.map((x, i) => (
-                  <tr
+                {getData.length === 0 ? (
+                  <tr></tr>
+                  ): ( <>
+                  {getData.map((x, i) => (
+                    <tr
                     key={i}
                     className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
                   >
@@ -735,21 +764,21 @@
                         : x.jenis_pmks === 9 ? "Penyandang Disabilitas"
                         : x.jenis_pmks === 10 ? "Perempuan Rawan Sosial Ekonomi"
                         : "Tuna Susila"}
-                    </td>
-                    <td className="px-6 py-4">
-                      {x.hubungan_dlm_keluarga === 0 ? "Anak"
-                        : x.hubungan_dlm_keluarga === 1 ? "Ibu"
-                        : "Kepala Keluarga"}
-                    </td>
-                    <td className="px-6 py-4">
-                      {x.jml_tanggungan_kepala_keluarga}
-                    </td>
-                    <td className="px-6 py-4">
-                      {x.pendapatan_keluarga === 0 ? "Baik"
-                        : x.pendapatan_keluarga === 1 ? "Cukup"
-                        : x.pendapatan_keluarga === 2 ? "Kurang"
-                        : "Sangat Baik"}
-                    </td>
+                        </td>
+                        <td className="px-6 py-4">
+                          {x.hubungan_dlm_keluarga === 0 ? "Anak"
+                          : x.hubungan_dlm_keluarga === 1 ? "Ibu"
+                          : "Kepala Keluarga"}
+                          </td>
+                          <td className="px-6 py-4">
+                            {x.jml_tanggungan_kepala_keluarga}
+                            </td>
+                            <td className="px-6 py-4">
+                              {x.pendapatan_keluarga === 0 ? "Baik"
+                              : x.pendapatan_keluarga === 1 ? "Cukup"
+                              : x.pendapatan_keluarga === 2 ? "Kurang"
+                              : "Sangat Baik"}
+                              </td>
                     <td className="px-6 py-4">
                       {x.status_rumah === 0 ? "Kontrakan"
                         : "Milik Sendiri"}
@@ -776,12 +805,13 @@
                           fetchDetailData(x.id);
                         }}
                         className="text-yellow-500 font-medium text-1xl"
-                      >
+                        >
                         View
                       </span>{" "}
                     </td>
                   </tr>
                 ))}
+                </>)}
               </tbody>
             </table>
             {getData.length === 0 && (

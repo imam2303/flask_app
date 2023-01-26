@@ -29,6 +29,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
+
 fs_mixin = FlaskSerialize(db)
 
 # Setup the Flask-JWT-Extended extension
@@ -45,7 +46,7 @@ class DataPrediksi(fs_mixin, db.Model):
     pendapatan_keluarga = db.Column(db.Integer, nullable=False)
     status_rumah = db.Column(db.Integer, nullable=False)
     pekerjaan = db.Column(db.Integer, nullable=False)
-    layak_tidak = db.Column(db.String, nullable=False)
+    layak_tidak = db.Column(db.String(10), nullable=False)
 
 
 @app.route("/login", methods=["POST"])
@@ -59,7 +60,8 @@ def login():
     return jsonify(access_token=access_token)
 
 @app.route("/", methods=["GET"])
-def home(): 
+def home():
+    db.create_all()     
     return render_template('landing.html')
 
 @app.route("/dataset", methods=["GET"])
@@ -80,7 +82,7 @@ def table(item_id = None):
    return DataPrediksi.fs_get_delete_put_post(item_id)
 
 
-@app.route("/predict", methods=["POST"])
+@app.route("/create-predict", methods=["POST"])
 @jwt_required()
 def predict():
     data = request.get_json()
