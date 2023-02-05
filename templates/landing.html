@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PMKS PREDICTION</title>
+    <link rel="icon" type="images/png" href="{{url_for('static', filename='img/karta.png')}}" />
     <meta name="description" content="Simple landind page" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
@@ -17,10 +18,11 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
       rel="stylesheet"
     />
+    <script src="{{url_for('static', filename='js/tailwind.config.js')}}"></script>
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
       .gradient {
-        background: linear-gradient(90deg, #0d2283 0%, #008cff 100%);
+        background: linear-gradient(90deg, #232944 0%, #084374 100%);
       }
     </style>
   </head>
@@ -34,9 +36,10 @@
         class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
       >
         <div class="pl-4 flex items-center">
+          <img src="{{url_for('static', filename='img/karta.png')}}" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" />
           <a
-            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            href="#"
+            class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-2xl"
+            href="/"
           >
             Prediksi Kelayakan PMKS Kelurahan Manjahlega
           </a>
@@ -96,10 +99,10 @@
           </p>
         </div>
         <!--Right Col-->
-        <div class="w-full md:w-3/5 py-5 text-center">
+        <div class="w-full md:w-3/5 py-10 text-right">
           <img
             class="w-full md:w-4/5 z-50"
-            src="{{url_for('static', filename='img/bansos-box.svg')}}"
+            src="{{url_for('static', filename='img/bantuan.png')}}"
           />
         </div>
       </div>
