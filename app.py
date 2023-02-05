@@ -64,6 +64,10 @@ def home():
     db.create_all()     
     return render_template('landing.html')
 
+@app.route("/rumah", methods=["GET"])
+def rumah():  
+    return render_template('index1.html')
+
 @app.route("/dataset", methods=["GET"])
 def dataset():
     SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
