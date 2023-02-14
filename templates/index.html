@@ -310,11 +310,24 @@
                                   <h1 className="text-2xl font-medium">
                                     Alamat : {predictionDetailData.alamat}
                                   </h1>
-                                  <h1 className="text-2xl font-bold">
-                                    Jenis PMKS : {predictionDetailData.jenis_pmks}
+                                  <h1 className="text-2xl font-medium">
+                                    Jenis PMKS : {predictionDetailData.jenis_pmks === 0 ? "Anak dalam Kedistabilitasan"
+                                                : predictionDetailData.jenis_pmks === 1 ? "Bekas Warga Binaan Lembaga Pemasyarakatan"
+                                                : predictionDetailData.jenis_pmks === 2 ? "Fakir Miskin"
+                                                : predictionDetailData.jenis_pmks === 3 ? "Kelompok Minoritas"
+                                                : predictionDetailData.jenis_pmks === 4 ? "Keluarga Bermasalah Sosial Psikologi"
+                                                : predictionDetailData.jenis_pmks === 5 ? "Keluarga Berumah Tak Layak Huni"
+                                                : predictionDetailData.jenis_pmks === 6 ? "Korban Penyalahgunaan Napza"
+                                                : predictionDetailData.jenis_pmks === 7 ? "Lansia terlantar"
+                                                : predictionDetailData.jenis_pmks === 8 ? "Pemulung"
+                                                : predictionDetailData.jenis_pmks === 9 ? "Penyandang Disabilitas"
+                                                : predictionDetailData.jenis_pmks === 10 ? "Perempuan Rawan Sosial Ekonomi"
+                                                : "Tuna Susila"}
                                   </h1>
                                   <h1>
-                                    hubungan_dlm_keluarga {predictionDetailData.hubungan_dlm_keluarga}
+                                    hubungan_dlm_keluarga : {predictionDetailData.hubungan_dlm_keluarga === 0 ? "Anak"
+                                                          : predictionDetailData.hubungan_dlm_keluarga === 1 ? "Ibu"
+                                                          : "Kepala Keluarga"}
                                   </h1>
                                   <h1>
                                     jml_tanggungan_kepala_keluarga : {predictionDetailData.jml_tanggungan_kepala_keluarga}
@@ -322,17 +335,29 @@
                                   <h1>
                                     {" "}
                                     pendapatan_keluarga :{" "}
-                                    {predictionDetailData.pendapatan_keluarga}
+                                    {predictionDetailData.pendapatan_keluarga === 0 ? "Baik"
+                                    : predictionDetailData.pendapatan_keluarga === 1 ? "Cukup"
+                                    : predictionDetailData.pendapatan_keluarga === 2 ? "Kurang"
+                                    : "Sangat Baik"}
                                   </h1>
                                   <h1>
                                     {" "}
                                     status_rumah :{" "}
-                                    {predictionDetailData.status_rumah}
+                                    {predictionDetailData.status_rumah === 0 ? "Kontrakan"
+                                    : "Milik Sendiri"}
                                   </h1>
                                   <h1>
                                     {" "}
                                     pekerjaan :{" "}
-                                    {predictionDetailData.pekerjaan}
+                                    {predictionDetailData.pekerjaan === 0 ? "ASN"
+                                      : predictionDetailData.pekerjaan === 1 ? "Buruh"
+                                      : predictionDetailData.pekerjaan === 2 ? "IRT"
+                                      : predictionDetailData.pekerjaan === 3 ? "Karyawan Swasta"
+                                      : predictionDetailData.pekerjaan === 4 ? "Pelajar"
+                                      : predictionDetailData.pekerjaan === 5 ? "Pemulung"
+                                      : predictionDetailData.pekerjaan === 6 ? "Pensiunan"
+                                      : predictionDetailData.pekerjaan === 7 ? "Tidak Bekerja"
+                                      : "Wiraswasta"}
                                   </h1>
                                   <h1 className="text-3xl font-bold uppercase">
                                     {" "}
@@ -411,6 +436,7 @@
                                         placeholder="Masukan Jenis PMKS"
                                         required
                                       >
+                                        <option value="">Masukkan Jenis PMKS</option>
                                         <option value="0">Anak Dalam Kedistabilitasan</option>
                                         <option value="1">Bekas Warga Binaan Lembaga Kemasyarakatan</option>
                                         <option value="2">Fakir Miskin</option>
@@ -447,12 +473,15 @@
                                         placeholder="Masukan Hubungan Dalam Keluarga"
                                         required
                                         >
+                                        <option value="">Masukkan Hubungan dalam Keluarga</option>
                                         <option value="0">Anak</option>
                                         <option value="1">Ibu</option>
                                         <option value="2">Kepala Keluarga</option>
                                       </select>
                                     </div>
+                                  </div>
 
+                                  <div className="flex flex-col gap-y-4 w-full">
                                     <div className="mb-6">
                                       <label
                                         htmlFor="jml_tanggungan_kepala_keluarga"
@@ -497,6 +526,7 @@
                                         placeholder="Masukan Pendapatan Keluarga"
                                         required
                                         >
+                                        <option value="">Masukkan Pendapatan Keluarga</option>
                                         <option value="2">Kurang dari Rp. 1.000.000</option>
                                         <option value="1">Cukup (Rp. 1.000.000 - Rp. 2.000.000)</option>
                                         <option value="0">Baik (Rp. 2.000.000 - Rp. 3.000.000)</option>
@@ -525,13 +555,11 @@
                                         placeholder="Status Rumah Anda"
                                         required
                                         >
+                                        <option value="">Masukkan Status Rumah Anda</option>
                                         <option value="0">Kontrakan</option>
                                         <option value="1">Milik Sendiri</option>
                                       </select>
                                     </div>
-                                  </div>
-
-                                  <div className="flex flex-col gap-y-4 w-full">
                                     <div className="mb-6">
                                       <label
                                         htmlFor="pekerjaan"
@@ -553,6 +581,7 @@
                                         placeholder="Masukan Pekerjaan Anda"
                                         required
                                         >
+                                        <option value="">Masukkan Pekerjaan Anda</option>
                                         <option value="0">ASN</option>
                                         <option value="1">Buruh</option>
                                         <option value="2">IRT</option>
