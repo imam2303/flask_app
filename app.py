@@ -85,7 +85,6 @@ def predict_home():
 def table(item_id = None):
    return DataPrediksi.fs_get_delete_put_post(item_id)
 
-
 @app.route("/create-predict", methods=["POST"])
 @jwt_required()
 def predict():
