@@ -204,6 +204,22 @@
             console.log(error);
           }
         },
+        DeletePredictionById: async (prediction_id) => {
+          const requestData = {
+            method: "delete",
+            headers: {
+              "Content-Type": "application/json; charset=utf-8",
+            },
+            url: `item/${prediction_id}`,
+          };
+          try {
+            const res = await ApiService.customRequest(requestData);
+            ApiService.setHeader();
+            return res.data;
+          } catch (error) {
+            console.log(error);
+          }
+        },
 
         CreatePrediction: async (payload) => {
           const requestData = {
@@ -325,16 +341,16 @@
                                                 : "Tuna Susila"}
                                   </h1>
                                   <h1>
-                                    hubungan_dlm_keluarga : {predictionDetailData.hubungan_dlm_keluarga === 0 ? "Anak"
+                                    Hubungan Dalam Keluarga : {predictionDetailData.hubungan_dlm_keluarga === 0 ? "Anak"
                                                           : predictionDetailData.hubungan_dlm_keluarga === 1 ? "Ibu"
                                                           : "Kepala Keluarga"}
                                   </h1>
                                   <h1>
-                                    jml_tanggungan_kepala_keluarga : {predictionDetailData.jml_tanggungan_kepala_keluarga}
+                                    Jumlah Tanggungan Kepala keluarga : {predictionDetailData.jml_tanggungan_kepala_keluarga}
                                   </h1>
                                   <h1>
                                     {" "}
-                                    pendapatan_keluarga :{" "}
+                                    Pendapatan Keluarga :{" "}
                                     {predictionDetailData.pendapatan_keluarga === 0 ? "Baik"
                                     : predictionDetailData.pendapatan_keluarga === 1 ? "Cukup"
                                     : predictionDetailData.pendapatan_keluarga === 2 ? "Kurang"
@@ -342,13 +358,13 @@
                                   </h1>
                                   <h1>
                                     {" "}
-                                    status_rumah :{" "}
+                                    Status Rumah :{" "}
                                     {predictionDetailData.status_rumah === 0 ? "Kontrakan"
                                     : "Milik Sendiri"}
                                   </h1>
                                   <h1>
                                     {" "}
-                                    pekerjaan :{" "}
+                                    Pekerjaan :{" "}
                                     {predictionDetailData.pekerjaan === 0 ? "ASN"
                                       : predictionDetailData.pekerjaan === 1 ? "Buruh"
                                       : predictionDetailData.pekerjaan === 2 ? "IRT"
@@ -877,8 +893,10 @@
                               confirmButtonColor: "#3085d6",
                               cancelButtonColor: "#d33",
                               confirmButtonText: "Ya, Hapus data",
-                            }).then((result) => {
+                            }).then( async (result) => {
                               if (result.isConfirmed) {
+                              await PredictionService.DeletePredictionById(x.id)
+                              fetchData();
                                 Swal.fire(
                                   "Berhasil Hapus Data!",
                                   "Data Terhapus",

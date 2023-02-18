@@ -78,11 +78,17 @@ def dataset():
 @app.route("/predict", methods=["GET"])
 def predict_home():
     return render_template('index.html')
+
+@app.route("/item/<item_id>", methods=["DELETE"])
+@app.route("/items")
+@jwt_required()
+def delete(item_id = None):
+   return DataPrediksi.fs_get_delete_put_post(item_id)
     
 @app.route("/item/<item_id>", methods=["GET"])
 @app.route("/items")
 @jwt_required()
-def table(item_id = None):
+def prediction_id(item_id = None):
    return DataPrediksi.fs_get_delete_put_post(item_id)
 
 @app.route("/create-predict", methods=["POST"])
