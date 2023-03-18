@@ -71,23 +71,9 @@
         removeToken() {
           localStorage.removeItem(TOKEN_KEY);
         },
-
-        getRefreshToken() {
-          return localStorage.getItem(REFRESH_TOKEN_KEY);
-        },
-
-        saveRefreshToken(refreshToken) {
-          localStorage.setItem(REFRESH_TOKEN_KEY, refreshToken);
-        },
-
-        removeRefreshToken() {
-          localStorage.removeItem(REFRESH_TOKEN_KEY);
-        },
       };
 
       const ApiService = {
-        _401interceptor: null || 0,
-
         init(baseURL) {
           axios.defaults.baseURL = baseURL;
         },
@@ -104,37 +90,6 @@
 
         customRequest(data) {
           return axios(data);
-        },
-
-        mount401Interceptor() {
-          this._401interceptor = axios.interceptors.response.use(
-            (response) => {
-              return response;
-            },
-            async (error) => {
-              if (
-                error.request.status === 401 ||
-                error.request.status === 422
-              ) {
-                if (error.config.url.includes("auth/login")) {
-                  AuthService.Logout();
-                  throw error;
-                } else {
-                  try {
-                    AuthService.Logout();
-                  } catch (e) {
-                    AuthService.Logout();
-                    throw error;
-                  }
-                }
-              }
-              throw error;
-            }
-          );
-        },
-
-        unmount401Interceptor() {
-          axios.interceptors.response.eject(this._401interceptor);
         },
       };
 
@@ -165,7 +120,6 @@
         Logout: () => {
           ApiService.removeHeader();
           TokenService.removeToken();
-          TokenService.removeRefreshToken();
           window.location.reload();
         },
       };
@@ -204,6 +158,25 @@
             console.log(error);
           }
         },
+
+        UpdatePredictionById: async (payload) => {
+          const requestData = {
+            method: "put",
+            headers: {
+              "Content-Type": "application/json; charset=utf-8",
+            },
+            url: `item/${payload.id}`,
+            data: payload,
+          };
+          try {
+            const res = await ApiService.customRequest(requestData);
+            ApiService.setHeader();
+            return res.data;
+          } catch (error) {
+            console.log(error);
+          }
+        },
+
         DeletePredictionById: async (prediction_id) => {
           const requestData = {
             method: "delete",
@@ -225,25 +198,23 @@
           const requestData = {
             method: "post",
             headers: {
-              "Content-Type": "application/json"
+              "Content-Type": "application/json; charset=utf-8",
             },
             data: payload,
-            url: "create-predict",
+            url: "predict",
           };
           try {
             const res = await ApiService.customRequest(requestData);
             ApiService.setHeader();
             return res.data;
           } catch (error) {
-            console.log(error);
+            Swal.fire({
+              title: "Telah terjadi error!",
+              text: error,
+              icon: "error",
+              confirmButtonText: "Ok",
+            });
           }
-        },
-
-        Logout: () => {
-          ApiService.removeHeader();
-          TokenService.removeToken();
-          TokenService.removeRefreshToken();
-          window.location.reload();
         },
       };
 
@@ -253,8 +224,10 @@
         setRepopulate,
         predictionDetailData,
         isEdit,
+        isView,
       }) => {
         const [predictionData, setPredictionData] = React.useState({
+          id: "",
           nama: "",
           alamat: "",
           jenis_pmks: "",
@@ -266,7 +239,11 @@
           layak_tidak: "",
         });
 
-        console.log(predictionDetailData);
+        React.useEffect(() => {
+          if (isEdit) {
+            setPredictionData(predictionDetailData);
+          }
+        }, [isEdit, predictionDetailData]);
 
         return (
           <>
@@ -284,12 +261,20 @@
                       onSubmit={(e) => {
                         try {
                           e.preventDefault();
-                          PredictionService.CreatePrediction(predictionData);
+                          isEdit
+                            ? PredictionService.UpdatePredictionById({
+                                ...predictionData,
+                              })
+                            : PredictionService.CreatePrediction(
+                                predictionData
+                              );
                           Swal.fire({
                             title: "Berhasil!",
-                            text: "Do you want to continue",
+                            text: isEdit
+                              ? "Berhasil Update Data"
+                              : "Berhasil Tambah Data",
                             icon: "success",
-                            confirmButtonText: "OK",
+                            confirmButtonText: "Ok",
                           });
                           setRepopulate((prev) => !prev);
                           setModalShow(false);
@@ -304,20 +289,20 @@
                         <div className="sm:flex w-full sm:items-start">
                           <div className="mt-3 w-full text-center sm:mt-0 sm:ml-4 sm:text-left">
                             <h3
-                              className="text-lg font-medium leading-6 text-gray-900"
+                              className="text-lg font-medium leading-6 text-blue-900"
                               id="modal-title"
                             >
                               {isEdit
-                                ? "View Data Klasifikasi"
-                                : "Tambah Data Klasifikasi"}
+                                ? "Data Prediksi PMKS"
+                                : "Tambah Data Prediksi PMKS"}
                             </h3>
                             <div className="mt-8 w-full">
-                              {isEdit && (
+                              {!isEdit && isView && (
                                 <div
                                   id="divcontents"
                                   className="flex flex-col gap-y-4"
                                 >
-                                  <h1 className="font-bold text-3xl">
+                                  <h1 className="font-bold text-2xl">
                                     Berdasarkan data dibawah :
                                   </h1>
                                   <h1 className="text-2xl font-medium">
@@ -383,7 +368,7 @@
                                 </div>
                               )}
 
-                              {!isEdit && (
+                              {!isView && (
                                 <div className="w-full flex gap-x-6">
                                   <div className="flex flex-col gap-y-4 w-full">
                                     <div className="mb-6 w-full">
@@ -617,7 +602,7 @@
                         </div>
                       </div>
                       <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                        {isEdit ? (
+                        {!isEdit && isView ? (
                           <button
                             onClick={() => {
                               const content =
@@ -635,19 +620,29 @@
                             type="button"
                             className="inline-flex w-full justify-center rounded-md border border-transparent bg-green-400 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
                           >
-                            {isEdit ? "Print Data" : "Tambah Prediksi Data"}
+                            {!isEdit && isView
+                              ? "Print Data"
+                              : isEdit
+                              ? "Edit Prediksi Data"
+                              : "Tambah Prediksi Data"}
                           </button>
                         ) : (
                           <button
                             type="submit"
                             className="inline-flex w-full justify-center rounded-md border border-transparent bg-green-400 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
                           >
-                            {isEdit ? "Print Data" : "Tambah Prediksi Data"}
+                            {!isEdit && isView
+                              ? "Print Data"
+                              : isEdit
+                              ? "Edit Prediksi Data"
+                              : "Tambah Prediksi Data"}
                           </button>
                         )}
 
                         <button
-                          onClick={() => setModalShow(!isModalShow)}
+                          onClick={() => {
+                            setModalShow(!isModalShow);
+                          }}
                           type="button"
                           className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                         >
@@ -667,8 +662,10 @@
         const [getData, setData] = React.useState([]);
         const [getModal, setModal] = React.useState(false);
         const [isEdit, setIsEdit] = React.useState(false);
+        const [isView, setIsView] = React.useState(false);
         const [repopulateData, setRepopulate] = React.useState(false);
         const [predictionDetailData, setPredictionDetailData] = React.useState({
+          id: "",
           nama: "",
           alamat: "",
           jenis_pmks: "",
@@ -679,11 +676,9 @@
           pekerjaan: "",
           layak_tidak: "",
         });
-        
 
         const fetchData = async () => {
           const res = await PredictionService.GetPrediction();
-          await PredictionService.GetPredictionById(1);
           setData(await res);
         };
 
@@ -703,6 +698,7 @@
                 onClick={() => {
                   setModal(!getModal);
                   setIsEdit(false);
+                  setIsView(false);
                 }}
                 className="bg-blue-400 text-white rounded-lg w-[200px] h-auto p-2"
               >
@@ -716,7 +712,7 @@
                       title: "Berhasil!",
                       text: "Berhasil Refresh Data!",
                       icon: "success",
-                      confirmButtonText: "Ok",
+                      confirmButtonText: "OK",
                     });
                   } catch (error) {
                     Swal.fire({
@@ -747,7 +743,7 @@
                         AuthService.Logout();
                         Swal.fire(
                           "Berhasil Logout!",
-                          "Kamu udah logout",
+                          "Kamu Sudah Logout",
                           "success"
                         );
                       }
@@ -762,13 +758,14 @@
                   }
                 }}
                 className="bg-yellow-500 p-2 w-[200px] text-white rounded-lg"
-                >
-                Keluar
+              >
+                Logout
               </button>
             </div>
             <Modal
               predictionDetailData={predictionDetailData}
               isEdit={isEdit}
+              isView={isView}
               setRepopulate={setRepopulate}
               setModalShow={setModal}
               isModalShow={getModal}
@@ -808,15 +805,12 @@
               </thead>
 
               <tbody>
-                {getData.length === 0 ? (
-                  <tr></tr>
-                  ): ( <>
-                  {getData.map((x, i) => (
-                    <tr
+                {getData.map((x, i) => (
+                  <tr
                     key={i}
                     className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
                   >
-                    <th
+                  <th
                       scope="row"
                       className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                     >
@@ -872,17 +866,29 @@
                       {x.layak_tidak}
                     </td>
                     <td className="px-6 py-4 gap-x-4">
-                      <span
+                      <button
                         onClick={() => {
                           setModal(!getModal);
-                          setIsEdit(true);
+                          setIsView(true);
+                          setIsEdit(false);
                           fetchDetailData(x.id);
                         }}
                         className="text-yellow-500 font-medium text-1xl"
-                        >
+                      >
                         View
-                      </span>{" "}
-                      <span
+                      </button>
+                      <button
+                        onClick={() => {
+                          setModal(!getModal);
+                          setIsEdit(true);
+                          setIsView(false);
+                          fetchDetailData(x.id);
+                        }}
+                        className="text-green-500 font-medium text-1xl"
+                      >
+                        Edit
+                      </button>
+                      <button
                         onClick={() => {
                           try {
                             Swal.fire({
@@ -893,10 +899,12 @@
                               confirmButtonColor: "#3085d6",
                               cancelButtonColor: "#d33",
                               confirmButtonText: "Ya, Hapus data",
-                            }).then( async (result) => {
+                            }).then(async (result) => {
                               if (result.isConfirmed) {
-                              await PredictionService.DeletePredictionById(x.id)
-                              fetchData();
+                                await PredictionService.DeletePredictionById(
+                                  x.id
+                                );
+                                fetchData();
                                 Swal.fire(
                                   "Berhasil Hapus Data!",
                                   "Data Terhapus",
@@ -907,30 +915,30 @@
                           } catch (error) {
                             Swal.fire({
                               title: "Gagal Hapus data!",
-                              text: "Gagal Hapus! Karena Tidak Ada Koneksi Internet" + error,
+                              text:
+                                "Gagal Hapus! Karena Tidak Ada Koneksi Internet" +
+                                error,
                               icon: "error",
                               confirmButtonText: "Ok",
                             });
                           }
                         }}
-                        className="text-yellow-500 font-medium text-1xl"
-                        >
+                        className="text-red-500 font-medium text-1xl"
+                      >
                         Delete
-                      </span>{" "}
+                      </button>
                     </td>
                   </tr>
                 ))}
-                </>)}
               </tbody>
             </table>
             {getData.length === 0 && (
-              <h1 className="text-black-900 font-bold text-3xl">Data Kosong</h1>
+              <h1 className="text-white font-bold text-3xl">Belum ada Data Prediksi</h1>
             )}
           </>
         );
       };
-      
-//Login Section
+
       const Login = ({ setAuth }) => {
         const [loginData, setLoginData] = React.useState({
           username: "",
@@ -1024,11 +1032,11 @@
         return (
           <>
             {!!TokenService.getToken() ? (
-              
               <div className="flex relative gap-y-4 w-full p-8 flex-col">
-                <h1 className="text-3xl font-bold text-gray-100">
+                <h1 className="text-3xl font-bold text-white">
                   Data Prediksi PMKS
                 </h1>
+
                 <Table />
               </div>
             ) : (
@@ -1042,16 +1050,13 @@
 
       if (!!TokenService.getToken()) {
         ApiService.setHeader();
-        ApiService.mount401Interceptor();
       } else {
         ApiService.removeHeader();
-        ApiService.unmount401Interceptor();
       }
 
       const root = ReactDOM.createRoot(document.getElementById("root"));
       const element = <Home />;
       root.render(element);
     </script>
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
   </body>
 </html>

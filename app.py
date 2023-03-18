@@ -1,7 +1,7 @@
 from array import array
+import datetime
 import numpy as np
 import pandas as pd
-from sklearn.neighbors import KNeighborsClassifier
 from flask import Flask, render_template, request, redirect, jsonify, json
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
@@ -24,7 +24,7 @@ CORS(app)
 
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:@localhost:3306/dataprediksi"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -33,7 +33,7 @@ db = SQLAlchemy(app)
 fs_mixin = FlaskSerialize(db)
 
 # Setup the Flask-JWT-Extended extension
-app.config["JWT_SECRET_KEY"] = "super-secret"  # Change this!
+app.config["JWT_SECRET_KEY"] = "super-secret" 
 jwt = JWTManager(app)
 
 class DataPrediksi(fs_mixin, db.Model):
@@ -56,17 +56,13 @@ def login():
     if username != "admin" or password != "admin":
         return jsonify({"msg": "Username dan Password Salah!"}), 401
 
-    access_token = create_access_token(identity=username)
+    access_token = create_access_token(identity=username, expires_delta=datetime.timedelta(days=15))
     return jsonify(access_token=access_token)
 
 @app.route("/", methods=["GET"])
 def home():
     db.create_all()     
     return render_template('landing.html')
-
-@app.route("/rumah", methods=["GET"])
-def rumah():  
-    return render_template('index1.html')
 
 @app.route("/dataset", methods=["GET"])
 def dataset():
@@ -91,7 +87,13 @@ def delete(item_id = None):
 def prediction_id(item_id = None):
    return DataPrediksi.fs_get_delete_put_post(item_id)
 
-@app.route("/create-predict", methods=["POST"])
+@app.route("/item/<item_id>", methods=["PUT"])
+@app.route("/items")
+@jwt_required()
+def edit(item_id = None):
+   return DataPrediksi.fs_get_delete_put_post(item_id)
+
+@app.route("/predict", methods=["POST"])
 @jwt_required()
 def predict():
     data = request.get_json()
